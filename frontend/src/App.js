@@ -1,18 +1,30 @@
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import ProductDetail from './pages/ProductDetail.jsx';
+
 function App() {
-  return (
+ 
+    return ( <BrowserRouter>
     <div className="App">
       <header className="header">
-        <a
+        <Link
           className="link"
-          href="/"
+          to="/"
           rel="noopener noreferrer"
         >
           Arts Shop
-        </a>
+        </Link>
       </header>
-      <main>Arts List</main>
-    </div>
-  );
+      <main>
+          <Routes >
+            <Route  path="/product/:slug" element={<ProductDetail />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          </Routes>
+      </main>
+      </div>
+    </BrowserRouter>
+    );
+ 
 }
 
 export default App;
