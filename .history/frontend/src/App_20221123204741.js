@@ -39,8 +39,9 @@ function App() {
         <Routes >
           <Route path="/product/:slug" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/signin" element={<SignIn />}></Route>
+          <Route path="/" element={<Home />}>
+          </Route>
         </Routes>
       </Container>
       {/* <Footer /> */}

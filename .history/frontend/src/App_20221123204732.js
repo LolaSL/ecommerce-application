@@ -37,10 +37,11 @@ function App() {
       </header>
       <Container className="mt-4">
         <Routes >
-          <Route path="/product/:slug" element={<ProductDetail />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/product/:slug" element={<ProductDetail />} /></Route>
+          <Route path="/cart" element={<Cart />}></Route>
+          <Route path="/signin" element={<SignIn />}></Route>
+          <Route path="/" element={<Home />}>
+          </Route>
         </Routes>
       </Container>
       {/* <Footer /> */}
