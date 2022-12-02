@@ -1,0 +1,128 @@
+import express from "express";
+import expressAsyncHandler from "express-async-handler";//Catch the errors in async(req, res)
+import Order from '../models/orderModel.js'
+import { isAuth } from '../utils.js'
+
+const orderRouter = express.Router();
+
+orderRouter.get(
+    '/',
+    isAuth,
+    // isAdmin,
+    expressAsyncHandler(async (req, res) => {
+        const orders = await Order.find().populate('user', 'name');
+        res.send(orders);
+    })
+);
+
+
+orderRouter.post('/', isAuth, expressAsyncHandler(async (req, res) => {
+    const newOrder = new Order({
+        orderItems: req.body.orderItems.map((x) => ({ ...x, product: x._id })),
+        shippingAddress: req.body.shippingAddress,
+        paymentOption: req.body.paymentOption,
+        itemsPrice: req.body.itemsPrice,
+        shippingPrice: req.body.shippingPrice,
+        taxPrice: req.body.taxPrice,
+        totalPrice: req.body.totalPrice,
+        user: req.user._id,
+    });
+
+    const order = await newOrder.save();
+    res.status(201).send({ message: 'New order was created', order });
+})
+);
+orderRouter.get(
+    '/mine',
+    isAuth,
+    expressAsyncHandler(async (req, res) => {
+      const orders = await Order.find({ user: req.user._id });
+      res.send(orders);
+    })
+  );
+  
+orderRouter.get(
+    '/:id',
+    isAuth,
+    expressAsyncHandler(async (req, res) => {
+        const order = await Order.findById(req.params.id);
+        if (order) {
+            res.send(order);
+        } else {
+            res.status(404).send({ message: 'Order Not Found' });
+        }
+    })
+);
+userRouter.put(
+  "/profile",
+  isAuth,
+  expressAsyncHandler(async (req, res) => {
+    const user = await User.findById(req.user._id);
+    if (user) {
+      user.name = req.body.name || user.name;
+      user.email = req.body.email || user.email;
+      if (req.body.password) {
+        user.password = bcrypt.hashSync(req.body.password, 8);
+      }
+
+      const updatedUser = await user.save();
+      res.send({
+        _id: updatedUser._id,
+        name: updatedUser.name,
+        email: updatedUser.email,
+        isAdmin: updatedUser.isAdmin,
+        token: generateToken(updatedUser),
+      });
+    } else {
+      res.status(404).send({ message: "User not found" });
+    }
+  })
+);
+
+orderRouter.put(
+    '/:id/pay',
+    isAuth,
+    expressAsyncHandler(async (req, res) => {
+        const order = await Order.findById(req.params.id)
+        //         .populate(
+        //     'user',
+        //     'email name'
+        //   );
+        if (order) {
+            order.isPaid = true;
+            order.paidAt = Date.now();
+            order.paymentResult = {
+                id: req.body.id,
+                status: req.body.status,
+                update_time: req.body.update_time,
+                email_address: req.body.email_address,
+            };
+
+            const updatedOrder = await order.save();
+            // mailgun()
+            //   .messages()
+            //   .send(
+            //     {
+            //       from: 'Ecommerce-application<ecommerce-application@mg.yourdomain.com>',
+            //       to: `${order.user.name} <${order.user.email}>`,
+            //       subject: `New order ${order._id}`,
+            //       html: payOrderEmailTemplate(order),
+            //     },
+            //     (error, body) => {
+            //       if (error) {
+            //         console.log(error);
+            //       } else {
+            //         console.log(body);
+            //       }
+            //     }
+            //   );
+
+            res.send({ message: 'Order Paid', order: updatedOrder });
+        } else {
+            res.status(404).send({ message: 'Order Not Found' });
+        }
+    })
+);
+
+
+export default orderRouter;
