@@ -2,7 +2,7 @@
   "name": "ecommerce-application",
   "version": "1.0.0",
   "engines": {
-    "node": "16.13.1"
+    "node": "6.11.1"
   },
   "description": "Ecommerce-Application",
   "main": "index.js",
