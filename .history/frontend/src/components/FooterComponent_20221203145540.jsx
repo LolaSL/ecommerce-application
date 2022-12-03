@@ -1,8 +1,8 @@
 import {Link} from 'react-router-dom'
 
-const Footer = () => {
+const FooterComponent = () => {
     return (
-      <footer className="footer d-flex flex footer-fixed-bottom justify-content-center p-4 mb-0">
+      <footer className="footer d-flex justify-content-center p-4 mb-0">
         <div className="m-2 text-center ">
           <Link to="https://github.com">
             <span className="p-2">
@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="m-2 text-center">
           <Link to="https://linkedin.com">
             <span className="p-2 ">
-              <i className="fas fa-linkedin-square text-dark" aria-hidden="true">
+              <i className="fa fa-linkedin-square text-dark" aria-hidden="true">
                 <p className="inline text-xl font-mono">Linkedin</p>
               </i>
             </span>
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="m-2 text-center">
           <span className="p-2">
-            <i className="fas fa-copyright" aria-hidden="true">
+            <i className="fa fa-copyright" aria-hidden="true">
               <p className="inline text-xl font-mono"> 2022 Arts Shop</p>
             </i>
           </span>
@@ -31,4 +31,4 @@ const Footer = () => {
       </footer>
     );
   };
-  export default Footer;
+  export default FooterComponent;
