@@ -10,7 +10,7 @@ import path from 'path';
 
 dotenv.config();
 mongoose
-    .connect(process.env.MONGODB_URI).then(() => { console.log('Connected to Mongo DB') })
+    .connect(process.env.MONGODB_URL_LOCAL).then(() => { console.log('Connected to Mongo DB') })
     .catch((error) => console.log(error.message))
 
 const app = express();
