@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 const FooterComponent = () => {
   return (
     <footer className="footer bg-dark text-center text-white pt-2">
+      <div class="footer-content">
+      <ul class="socials">
       <Link to="https://github.com" className="m-3">
         <span className="text-white ">
           <i className="fab fa-github mt-2" aria-hidden="true">
@@ -21,7 +23,17 @@ const FooterComponent = () => {
       <Link to="/#" className="m-3 text-white a-link">
         {" "}
         Arts Shop
-      </Link>
+          </Link>
+          </ul>
+      </div>
+      <div class="footer-menu">
+ <ul class="f-menu">
+    <Link to="#">New Arrivals</Link>>
+    <li><a href="">Arts Shop</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Blog</a></li>
+ </ul>
+</div>
     </footer>
   );
 };
