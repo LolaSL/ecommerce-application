@@ -67,13 +67,13 @@ function App() {
         <header>
           <Navbar className="navbar nav" bg="black" variant="dark" expand="lg">
             <Container className="container">
-              <Button className="me-4"
+              <Button
                 variant="dark"
                 onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
               >
                 <i className="fas fa-bars"></i>
               </Button>
-              <Link className="a-link me-2" to="/" rel="noopener noreferrer">
+              <Link className="a-link" to="/" rel="noopener noreferrer">
                 <Navbar.Brand>New Arrivals</Navbar.Brand>
               </Link>
               <Link className="a-link text-white" to="/shop" rel="noopener noreferrer">

@@ -67,7 +67,7 @@ function App() {
         <header>
           <Navbar className="navbar nav" bg="black" variant="dark" expand="lg">
             <Container className="container">
-              <Button className="me-4"
+              <Button
                 variant="dark"
                 onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
               >

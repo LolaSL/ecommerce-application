@@ -40,7 +40,7 @@ import Map from './pages/Map.jsx';
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
-  const { fullBox, cart, userInfo } = state;
+  const {fullBox, cart, userInfo } = state;
 
   const signoutHandler = () => {
     ctxDispatch({ type: 'USER_SIGNOUT' });
@@ -56,24 +56,20 @@ function App() {
     <BrowserRouter>
       <div className={
         sidebarIsOpen
-          ? fullBox
-            ? 'site-container active-cont d-flex flex-column full-box'
-            : 'site-container active-cont d-flex flex-column'
-          : fullBox
-            ? 'site-container d-flex flex-column active-cont'
-            : 'site-container d-flex flex-column'
+          ? 'site-container d-flex flex-column active-cont'
+          : 'site-container d-flex flex-column'
       }>
         <ToastContainer position="bottom-center" limit={1} />
         <header>
           <Navbar className="navbar nav" bg="black" variant="dark" expand="lg">
             <Container className="container">
-              <Button className="me-4"
+              <Button
                 variant="dark"
                 onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
               >
                 <i className="fas fa-bars"></i>
               </Button>
-              <Link className="a-link me-2" to="/" rel="noopener noreferrer">
+              <Link className="a-link" to="/" rel="noopener noreferrer">
                 <Navbar.Brand>New Arrivals</Navbar.Brand>
               </Link>
               <Link className="a-link text-white" to="/shop" rel="noopener noreferrer">
@@ -175,7 +171,7 @@ function App() {
               <Route path="/signin" element={<SignIn />} />
               <Route path="/signup" element={<SingUp />} />
               <Route path="/profile" element={<AuthRoutes><Profile /></AuthRoutes>} />
-              <Route path="/map" element={<AuthRoutes><Map /></AuthRoutes>} />
+              <Route path="/map" element={ <AuthRoutes><Map /></AuthRoutes>}/>
               <Route path="/placeorder" element={<PlaceOrder />} />
               <Route path="/order/:id" element={<AuthRoutes><Order /></AuthRoutes>} />
               <Route path="/orders" element={<AuthRoutes><Orders /></AuthRoutes>} />
