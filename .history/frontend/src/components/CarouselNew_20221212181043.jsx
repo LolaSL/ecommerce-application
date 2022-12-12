@@ -17,6 +17,9 @@ function CarouselNew() {
             <p className="product-title fw-bold  text-light">
               Bohemian Glass Vase
             </p>
+            <p className="title  text-light">
+              Glass vase is decorated in a stained glass window style ...
+              </p>
             </span>
           </Carousel.Caption>
         </Carousel.Item>

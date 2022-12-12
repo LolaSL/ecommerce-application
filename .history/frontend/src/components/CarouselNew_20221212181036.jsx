@@ -17,6 +17,9 @@ function CarouselNew() {
             <p className="product-title fw-bold  text-light">
               Bohemian Glass Vase
             </p>
+            <p className="title  text-light">
+              Glass vase is decorated in a stained glass window style ...
+              </p>
             </span>
           </Carousel.Caption>
         </Carousel.Item>
@@ -45,6 +48,9 @@ function CarouselNew() {
             <p className="product-title  fw-bold  text-danger">
               Sunburst wall clock
             </p>
+            <p className="title text-danger">
+              Handmade 1950s-style sunburst clock.
+              </p>
             </span>
           </Carousel.Caption>
         </Carousel.Item>
