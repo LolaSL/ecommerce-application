@@ -9,7 +9,7 @@ import { Store } from '../Store';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
 import { getError } from '../utils';
-import Container from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container;
 
 
 const reducer = (state, action) => {

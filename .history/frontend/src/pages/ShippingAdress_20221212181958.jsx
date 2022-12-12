@@ -61,8 +61,9 @@ const ShippingAdress = () => {
           <Helmet>
               <title>Shipping Address</title>
       </Helmet>
-      <Container className="container small-container">
+      <Container></Container>
           <CheckoutActions step1 step2></CheckoutActions>
+      <Container className="container small-container">
           <h1 className="pt-3 mb-4">Shipping Address</h1>
           <Form onSubmit={submitHandler}>
           <Form.Group className="mb-3" controlId="fullName">
@@ -130,8 +131,7 @@ const ShippingAdress = () => {
             </Button>
           </div>
               </Form>
-        </Container>
-
+          </Container>
       </div> 
   )
 }

@@ -8,7 +8,7 @@ import Loader from '../components/Loader';
 import Message from '../components/Message';
 import { Store } from '../Store';
 import { getError } from '../utils';
-import Container from "react-bootstrap/Container";
+
 
 
 
@@ -103,7 +103,7 @@ const OrderList = () => {
       ) : error ? (
         <Message variant="danger">{error}</Message>
         ) : (
-            <Container className="middle-container">
+            <Container></Container>
         <table className="table">
           <thead>
             <tr>
@@ -153,7 +153,7 @@ const OrderList = () => {
             ))}
           </tbody>
         </table>
-        </Container>)}
+      )}
     </div>
   );
 }

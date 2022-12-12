@@ -8,7 +8,7 @@ import Loader from '../components/Loader';
 import Message from '../components/Message';
 import { Store } from '../Store';
 import { getError } from '../utils';
-import Container from "react-bootstrap/Container";
+
 
 
 
@@ -96,14 +96,13 @@ const OrderList = () => {
       <Helmet>
         <title>Orders</title>
       </Helmet>
-      <h1  className="text-center mb-4">Orders</h1>
+      <h1>Orders</h1>
       {loadingDelete && <Loader></Loader>}
       {loading ? (
         <Loader></Loader>
       ) : error ? (
         <Message variant="danger">{error}</Message>
-        ) : (
-            <Container className="middle-container">
+      ) : (
         <table className="table">
           <thead>
             <tr>
@@ -153,7 +152,7 @@ const OrderList = () => {
             ))}
           </tbody>
         </table>
-        </Container>)}
+      )}
     </div>
   );
 }

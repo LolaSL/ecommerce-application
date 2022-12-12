@@ -63,6 +63,7 @@ const ShippingAdress = () => {
       </Helmet>
       <Container className="container small-container">
           <CheckoutActions step1 step2></CheckoutActions>
+ 
           <h1 className="pt-3 mb-4">Shipping Address</h1>
           <Form onSubmit={submitHandler}>
           <Form.Group className="mb-3" controlId="fullName">

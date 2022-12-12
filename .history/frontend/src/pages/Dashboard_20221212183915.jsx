@@ -53,7 +53,7 @@ const reducer = (state, action) => {
   
     return (
       <div>
-        <h1 className="text-center mb-4">Dashboard</h1>
+        <h1 >Dashboard</h1>
         {loading ? (
           <Loader />
         ) : error ? (

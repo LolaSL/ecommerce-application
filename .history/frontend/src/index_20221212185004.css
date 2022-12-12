@@ -30,12 +30,15 @@ main {
   flex: 1;
 }
 .product-title {
-  font-size: 24px;
+  font-size: 24
   text-transform: uppercase;
   opacity: 0.8;
   text-shadow: 1px 1px 2px black;
 }
-
+.title {
+  opacity: 0.8;
+  text-shadow: 1px 1px 2px black;
+}
 .middle-container {
   max-width: 1200px;
 }
@@ -178,6 +181,9 @@ ul {
   .product-title {
     font-size: 14px;
   }
+  .title {
+    font-size: 9px;
+  }
   .side-navbar {
     width: 70%;
    height: auto;
@@ -187,3 +193,10 @@ ul {
    width:100%;
   }
 }
+@media screen and (max-width:1100px) and (orientation: landscape) {
+  .body {
+      overflow: hidden;
+  }
+  .body {
+      overflow-x: hidden;
+  }}

@@ -9,8 +9,6 @@ import { Store } from '../Store';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
 import { getError } from '../utils';
-import Container from 'react-bootstrap/Container';
-
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -140,7 +138,7 @@ const ProductList = () => {
 
   return (
     <div>
-         <Container className="middle-container">
+         <Container className="middle-container"></Container>
       <Row>
         <Col>
           <h1 className="text-center mb-4">Products</h1>
@@ -214,8 +212,8 @@ const ProductList = () => {
               </Link>
             ))}
           </div>
-        </>  
-    )}</Container>
+        </>
+      )}
     </div>
   );
 }

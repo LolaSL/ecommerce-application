@@ -143,7 +143,7 @@ const ProductList = () => {
          <Container className="middle-container">
       <Row>
         <Col>
-          <h1 className="text-center mb-4">Products</h1>
+          <h1 ">Products</h1>
         </Col>
         <Col className="col text-end">
           <div>
