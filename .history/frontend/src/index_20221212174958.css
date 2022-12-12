@@ -174,7 +174,7 @@ ul {
     width: auto;
   }
 }
-@media only screen and (min-width: 334px) and (max-width: 760px) and (height: 1000px){
+@media only screen and (min-width: 200px) and (max-width: 660px) {
   .product-title {
     font-size: 14px;
   }
@@ -182,11 +182,7 @@ ul {
     font-size: 9px;
   }
   .side-navbar {
-    width: 70%;
-   height: auto;
-
-  }
-  .container{
-   width:100%;
+    width: 200px;
+    max-height: 100%;
   }
 }

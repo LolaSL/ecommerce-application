@@ -224,13 +224,18 @@ function App() {
                   </AdminRoute>
                 }
               ></Route>
+
               <Route path="/" element={<NewArrivals />} />
             </Routes>
           </Container>
         </main>
-        <footer className="text-center">
-         <div className="text-bold mb-2"> &copy; {new Date().getFullYear()} Copyright: Arts Shop</div>
-        </footer>
+        <footerclassName="rights py-2"
+              style={{ color: "white", textAlign: "center" }}
+            >
+              &copy; {new Date().getFullYear()} Copyright: Arts Shop
+       
+          {/* <div className="text-center">All rights reserved</div> */}
+        </footerclassName=>
       </div>
     </BrowserRouter>
   );

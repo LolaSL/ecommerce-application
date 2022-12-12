@@ -157,6 +157,12 @@ function App() {
             <Link to="/search" className="m-3 text-white a-link">
               Find your Arts
             </Link>
+            <Container
+              className="rights py-2"
+              style={{ color: "white", textAlign: "center" }}
+            >
+              &copy; {new Date().getFullYear()} Copyright: Arts Shop
+            </Container>
           </Nav>
         </div>
 
@@ -224,12 +230,13 @@ function App() {
                   </AdminRoute>
                 }
               ></Route>
+
               <Route path="/" element={<NewArrivals />} />
             </Routes>
           </Container>
         </main>
-        <footer className="text-center">
-         <div className="text-bold mb-2"> &copy; {new Date().getFullYear()} Copyright: Arts Shop</div>
+        <footer>
+          <div className="text-center">All rights reserved</div>
         </footer>
       </div>
     </BrowserRouter>

@@ -224,6 +224,7 @@ function App() {
                   </AdminRoute>
                 }
               ></Route>
+
               <Route path="/" element={<NewArrivals />} />
             </Routes>
           </Container>

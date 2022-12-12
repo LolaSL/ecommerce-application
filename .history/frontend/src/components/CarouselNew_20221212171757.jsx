@@ -8,7 +8,7 @@ function CarouselNew() {
       <Carousel className="carousel mt-4 mb-4">
         <Carousel.Item>
           <img
-            className="image d-block w-100 rounded border"
+            className="image d-block w-100 rounded border py-4"
             src="/images/14.jpg"
             alt="First slide"
           />

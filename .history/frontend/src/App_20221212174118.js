@@ -224,12 +224,13 @@ function App() {
                   </AdminRoute>
                 }
               ></Route>
+
               <Route path="/" element={<NewArrivals />} />
             </Routes>
           </Container>
         </main>
-        <footer className="text-center">
-         <div className="text-bold mb-2"> &copy; {new Date().getFullYear()} Copyright: Arts Shop</div>
+        <footer >
+          &copy; {new Date().getFullYear()} Copyright: Arts Shop
         </footer>
       </div>
     </BrowserRouter>

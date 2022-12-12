@@ -4,11 +4,12 @@ import Container from "react-bootstrap/Container";
 function CarouselNew() {
   return (
     <Container className="container middle-container mt-4 mb-4">
+     
       <h1 className="text-center mb-4 fw-bold"> New Arrivals</h1>
       <Carousel className="carousel mt-4 mb-4">
         <Carousel.Item>
           <img
-            className="image d-block w-100 rounded border"
+            className="image d-block w-100 rounded border py-4"
             src="/images/14.jpg"
             alt="First slide"
           />
@@ -47,14 +48,12 @@ function CarouselNew() {
             alt="Third slide"
           />
           <Carousel.Caption>
-          <span>
-            <p className="product-title  fw-bold  text-danger">
+            <h1 className="product-title  fw-bold  text-danger">
               Sunburst wall clock
-            </p>
-            <p className="title text-danger">
+            </h1>
+            <p className="title  fw-bold  text-danger">
               Handmade 1950s-style sunburst clock.
-              </p>
-            </span>
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
