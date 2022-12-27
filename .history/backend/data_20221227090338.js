@@ -37,6 +37,7 @@ const data = {
             title: "JOSEPH BULOVA",
             type: "Presentation",
             image: "/images/18.jpg",
+            alt: "Bulova clock",
             information: "In 1875, just as America was entering its golden age of industry and progress, one visionary leader would rise to ignite a series of iconic moments in our nation history-and transform the way the world perceived time. Fueled by the eras risk-taking ethos, Joseph Bulova presented one innovation after the next. Ultimately opening a small store in downtown New York City that would mark the beginning of his lifelong quest: to craft supreme quality timepieces for an ever-changing and dynamic landscape. With an unwavering drive for perfection, efficiency and precision, quality craftsmanship became the foundation upon which Joseph Bulova built his brand. But what fueled the brands continual progress was its spirit of invention - pursuing innovation and technology both within the timepiece industry-and beyond.",
             informationSource: "Bulova website Company resorce.",
             reference: "'JOSEPH BULOVA.'",

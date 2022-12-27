@@ -8,6 +8,7 @@ import Message from "../components/Message";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "FETCH_REQUEST":
@@ -48,20 +49,23 @@ const Events = () => {
       <Helmet>
         <title>Events</title>
       </Helmet>
-
+    
       <h1 className="text-center mb-2 py-4 fw-bold">Events</h1>
       {loading ? (
         <Loader />
       ) : error ? (
         <Message variant="danger">{error}</Message>
       ) : (
-        <Row className="pt-4 justify-content-center">
-          {eventList.map((event, index) => (
-            <Col key={index} sm={16} md={5} lg={9} className="mb-3 pt-2">
-              <Event event={event} />
-            </Col>
-          ))}
-        </Row>
+
+          <Row>
+            {eventList.map((event, index) => (
+              <Col key={index} sm={16} md={5} lg={9} className="mb-3 pt-2">
+                <Event event={event} />
+              </Col>
+            ))}
+          </Row>
+     
+       
       )}
     </div>
   );
