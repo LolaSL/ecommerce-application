@@ -48,6 +48,7 @@ const Events = () => {
       <Helmet>
         <title>Events</title>
       </Helmet>
+
       <h1 className="text-center mb-2 py-4 fw-bold">Events</h1>
       {loading ? (
         <Loader />
