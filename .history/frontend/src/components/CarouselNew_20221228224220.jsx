@@ -28,7 +28,7 @@ function CarouselNew() {
           />
           <Carousel.Caption>
             <span>
-            <p className="product-title  fw-bold text-success">
+            <p className="product-title  fw-bold text-secondary">
             Silver Isis Statue
             </p>
             </span>

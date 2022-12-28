@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -42,10 +42,9 @@ main {
   box-shadow: 3px 6px #bdbcbc;
   box-sizing: border-box;
 }
-#btn-light {
-  color: black;
-  background-color: white;
-  border: none;
+.btn{
+  color: white;
+  background-color: ;
 }
 .btn-primary,
 .btn-outline-primary {
@@ -178,15 +177,16 @@ ul {
     width: auto;
   }
 }
-@media only screen and (min-width: 306px) and (max-width: 760px) and (height: 1000px) {
+@media only screen and (min-width: 306px) and (max-width: 760px) and (height: 1000px){
   .product-title {
     font-size: 14px;
   }
   .side-navbar {
     width: 70%;
-    height: auto;
+   height: auto;
+
   }
-  .container {
-    width: 100%;
+  .container{
+   width:100%;
   }
 }

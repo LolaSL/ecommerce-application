@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+
+
 
 function Event(props) {
   const [readMore, setReadMore] = useState(false);
@@ -8,9 +10,10 @@ function Event(props) {
 
   return (
     <Card className="shadow border card mb-3" key={event.slug}>
+    
       <div className="card-header py-3">
         <strong>{event.type}</strong>
-        <strong>
+        <strong >
           {" "}
           {event.location} {event.date} {event.time}{" "}
         </strong>
@@ -26,15 +29,15 @@ function Event(props) {
             />
             <Button
               type="button"
-              id ="btn-light"
-              className="btn btn-light mt-2"
+              className="btn btn-outline mt-2"
               onClick={() => setReadMore(!readMore)}
             >
-              <h6> {`${!readMore ? "Read more" : "Read less"}`}</h6>
+              <h6>
+                {" "}
+                {`${!readMore ? "Read More" : "Read Less"}`}
+              </h6>
             </Button>
-            <div className="read-more pt-4">
-              {readMore && event.information}
-            </div>
+            <div className="read-more pt-4">{readMore && event.information}</div>
           </div>
           <footer className="blockquote-footer pt-4">
             {event.informationSource}
@@ -42,7 +45,7 @@ function Event(props) {
           </footer>
         </blockquote>
       </div>
-    </Card>
+    </Card >
   );
 }
 export default Event;

@@ -30,7 +30,7 @@ function Event(props) {
               className="btn btn-light mt-2"
               onClick={() => setReadMore(!readMore)}
             >
-              <h6> {`${!readMore ? "Read more" : "Read less"}`}</h6>
+              <h6> {`${!readMore ? "Read more" : "Read Less"}`}</h6>
             </Button>
             <div className="read-more pt-4">
               {readMore && event.information}
