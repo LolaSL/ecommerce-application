@@ -146,7 +146,7 @@ function ProductDetail() {
             <ListGroup.Item>
               Price : <strong>${product.price}</strong>
                 </ListGroup.Item>
-            <ListGroup.Item className="desc">
+            <ListGroup.Item className="">
               Description: <p>{product.description}</p>
             </ListGroup.Item>
           </ListGroup>

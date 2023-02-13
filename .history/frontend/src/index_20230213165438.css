@@ -70,10 +70,7 @@ main {
 .product-information {
   padding: 1rem;
 }
-.desc{
-  text-align: justify;
-}
-
+.  text-align: justify;
 .rating span {
   color: rgb(244, 84, 25);;
 }
