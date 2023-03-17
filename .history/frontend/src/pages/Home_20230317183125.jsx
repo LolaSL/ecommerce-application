@@ -1,6 +1,6 @@
 import React, { useReducer, useEffect } from "react";
 import axios from "axios";
-import logger from "use-reducer-logger";
+// import logger from "use-reducer-logger";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Product from "../components/Product";
@@ -57,7 +57,7 @@ const Home = () => {
         ) : (
           <Row>
             {productList.map((product) => (
-              <Col key={product.slug} sm={8} md={4} lg={4} className="mb-3 pt-2">
+              <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3 pt-2">
                 <Product product={product} />
               </Col>
             ))}
