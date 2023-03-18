@@ -1,7 +1,7 @@
 import React, { useReducer, useEffect } from "react";
 import Event from "../components/Event";
 import axios from "axios";
-import logger from "use-reducer-logger";
+// import logger from "use-reducer-logger";
 import { Helmet } from "react-helmet-async";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
@@ -23,7 +23,7 @@ const reducer = (state, action) => {
 
 const Events = () => {
   const [{ loading, error, eventList }, dispatch] = useReducer(
-    logger(reducer),
+(reducer),
     {
       eventsList: [],
       loading: true,

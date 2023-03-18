@@ -1,13 +1,12 @@
 import React, { useReducer, useEffect } from "react";
 import Event from "../components/Event";
 import axios from "axios";
-import logger from "use-reducer-logger";
+// import logger from "use-reducer-logger";
 import { Helmet } from "react-helmet-async";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -50,28 +49,19 @@ const Events = () => {
         <title>Events</title>
       </Helmet>
       <h1 className="text-center mb-2 py-4 fw-bold">Events</h1>
-      <div className="events">
-          {loading ? (
-            <Loader />
-          ) : error ? (
-            <Message variant="danger">{error}</Message>
-          ) : (
-            <Row>
-              {eventList.map((event) => (
-                <Col
-                  key={event.slug}
-                  sm={16}
-                  md={5}
-                  lg={9}
-                  className="mb-3 pt-2"
-                >
-                  <Event event={event} />
-                </Col>
-              ))}
-            </Row>
-          )}
-        </div>
-      </div>
+      {loading ? (
+        <Loader />
+      ) : error ? (
+        <Message variant="danger">{error}</Message>
+      ) : (
+        <Row className="pt-4 justify-content-center">
+          {eventList.map((event, index) => (
+            <Col key={index} sm={16} md={5} lg={9} className="mb-3 pt-2">
+              <Event event={event} />
+            </Col>
+          ))}
+        </Row>
+      )}
     </div>
   );
 };
