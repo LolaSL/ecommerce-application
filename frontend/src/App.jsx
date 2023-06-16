@@ -34,7 +34,10 @@ import ProductList from './pages/ProductList';
 import ProductEdit from './pages/ProductEdit';
 import UserEdit from './pages/UserEdit.jsx';
 import Map from './pages/Map.jsx';
-
+import Events from "./pages/Events.jsx";
+import EventEdit from "./pages/EventEdit";
+import EventList from "./pages/EventList";
+import NotFound from "./pages/NotFound.jsx";
 
 
 
@@ -121,6 +124,9 @@ function App() {
                       <LinkContainer to="/admin/orders">
                         <NavDropdown.Item>Orders</NavDropdown.Item>
                       </LinkContainer>
+                      <LinkContainer to="/admin/events">
+                        <NavDropdown.Item>Events</NavDropdown.Item>
+                      </LinkContainer>
                       <LinkContainer to="/admin/users">
                         <NavDropdown.Item>Users</NavDropdown.Item>
                       </LinkContainer>
@@ -157,6 +163,9 @@ function App() {
             <Link to="/search" className="m-3 text-white a-link">
               Find your Arts
             </Link>
+            <Link to="/events" className="m-3 text-white a-link">
+              Events
+            </Link>
           </Nav>
         </div>
 
@@ -176,6 +185,8 @@ function App() {
               <Route path="/shipping" element={<ShippingAddress />} />
               <Route path="/payment" element={<PaymentOption />} />
               <Route path="/shop" element={<Home />} />
+              <Route path="/events" element={<Events />} />
+              <Route path="*" element={<NotFound />} />
               <Route
                 path="/admin/dashboard"
                 element={
@@ -207,7 +218,22 @@ function App() {
                     <ProductList />
                   </AdminRoute>
                 }
-              ></Route>
+              ></Route>   <Route
+              path="/admin/events"
+              element={
+                <AdminRoute>
+                  <EventList />
+                </AdminRoute>
+              }
+            ></Route>
+            <Route
+              path="/admin/event/:id"
+              element={
+                <AdminRoute>
+                  <EventEdit />
+                </AdminRoute>
+              }
+            ></Route>
               <Route
                 path="/admin/product/:id"
                 element={
