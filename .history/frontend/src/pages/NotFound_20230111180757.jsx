@@ -1,0 +1,24 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import { Helmet } from "react-helmet-async";
+
+const NotFound = () => {
+  return (
+    <div className="not-found text-center display-6 pt-4">
+      <Helmet>
+        <title>Not Found</title>
+      </Helmet>
+          <Container className="middle-container">
+              <div className="display-1 fw-bol"> 404</div>
+      <h2 className="text-danger font-italic pt-4 mb-6">
+       Page not found...
+      </h2>
+      <div className="mt-6 pt-4 font-italic">
+        <Link to="/shop">Go to Art Shop </Link>
+              </div>
+          </Container>
+    </div>
+  );
+};
+export default NotFound;
