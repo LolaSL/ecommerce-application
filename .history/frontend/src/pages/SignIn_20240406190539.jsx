@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { toast} from "react-toastify";
 import { Store } from "../Store";
 import { getError } from "../utils";
 
@@ -37,7 +37,7 @@ const SignIn = () => {
       toast.error(getError(err));
     }
   };
-  //preventing presence of signin page when user signin has signed in already
+//preventing presence of signin page when user signin has signed in already
   useEffect(() => {
     if (userInfo) {
       navigate(redirect);
@@ -69,6 +69,9 @@ const SignIn = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
+        <div className="mb-3">
+          <Link to="/forgot-password">Forgot Password?</Link>
+        </div>
         <div className="mb-3">
           <Button type="submit">Sign In</Button>
         </div>

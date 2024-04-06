@@ -63,8 +63,8 @@ const data = {
     userList: [
         {
             name: 'Admin',
-            email: 'admin_1@example.com',
-            password: bcrypt.hashSync('admin123'),
+            email: 'admin@example.com',
+            password: bcrypt.hashSync('1234567890'),
             isAdmin: true
         },
         {

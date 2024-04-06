@@ -70,6 +70,9 @@ const SignIn = () => {
           />
         </Form.Group>
         <div className="mb-3">
+          <Link to="/forgot-password">Forgot Password?</Link>
+        </div>
+        <div className="mb-3">
           <Button type="submit">Sign In</Button>
         </div>
         <div className="mb-3">
