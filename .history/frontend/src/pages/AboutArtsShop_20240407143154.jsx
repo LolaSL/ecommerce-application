@@ -27,7 +27,7 @@ const AboutArtsShop = () => {
               presented ideas.
             </p>
           </article>
-          <article className="mb-2">
+          <article className="mb-">
             <h2 className="justify-content-center pt-4">Arts Shop Goals</h2>
             <ol style={{ textAalign: "justify" }}>
               <li>
@@ -43,7 +43,7 @@ const AboutArtsShop = () => {
               </li>
             </ol>
           </article>
-          <article className="mb-2">
+          <article>
             <h2>Arts Shop Values</h2>
             <li>Inspiration.</li>
             <li>Pride.</li>

@@ -10,7 +10,7 @@ const AboutArtsShop = () => {
       <div>
         <div className="site-container">
           <article>
-            <h1 className="text-center mb-2 py-4 fw-bold">Arts Shop Mission</h1>
+            <h1 className="text-center mb-2 py-4 fw-bold pt-4">Arts Shop Mission</h1>
             <div className="about_arts_shop pt-4">
               <img
                 className="d-block w-100 rounded shadow border"
@@ -27,7 +27,7 @@ const AboutArtsShop = () => {
               presented ideas.
             </p>
           </article>
-          <article className="mb-2">
+          <article>
             <h2 className="justify-content-center pt-4">Arts Shop Goals</h2>
             <ol style={{ textAalign: "justify" }}>
               <li>
@@ -43,7 +43,7 @@ const AboutArtsShop = () => {
               </li>
             </ol>
           </article>
-          <article className="mb-2">
+          <article>
             <h2>Arts Shop Values</h2>
             <li>Inspiration.</li>
             <li>Pride.</li>
