@@ -34,12 +34,10 @@ const Product = (props) => {
       </Link>
       <Card.Body>
         {" "}
-        <Link to={`/product/${product.slug}`}>
+        <Link to={`/product/${product.slug}`} className="product-l">
           <Card.Title> {product.name}</Card.Title>
         </Link>
-        <Rating
-
-        />
+        <Rating rating={product.rating} numReviews={product.numReviews} />
         <Card.Text>${product.price}</Card.Text>
         {product.countInStock === 0 ? (
           <Button variant="secondary fw-bold" disabled>

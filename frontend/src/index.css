@@ -70,12 +70,15 @@ main {
 .product-information {
   padding: 1rem;
 }
-.desc{
+.product-link {
+  text-decoration: none;
+}
+.desc {
   text-align: justify;
 }
 
 .rating span {
-  color: rgb(244, 84, 25);;
+  color: rgb(244, 84, 25);
 }
 
 .img-large {
