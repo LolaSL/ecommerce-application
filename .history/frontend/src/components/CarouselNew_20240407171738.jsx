@@ -14,9 +14,9 @@ function CarouselNew() {
           />
           <Carousel.Caption>
             <span>
-              <p className="product-title fw-bold  text-danger">
-                Bohemian Glass Vases
-              </p>
+            <p className="product-title fw-bold  text-danger">
+              Bohemian Glass Vases
+            </p>
             </span>
           </Carousel.Caption>
         </Carousel.Item>
@@ -28,9 +28,9 @@ function CarouselNew() {
           />
           <Carousel.Caption>
             <span>
-              <p className="product-title  fw-bold text-info">
-                Gold Plated Silver Isis Statue
-              </p>
+            <p className="product-title  fw-bold text-success">
+            Gold Plated Silver Isis Statue
+            </p>
             </span>
           </Carousel.Caption>
         </Carousel.Item>
@@ -41,10 +41,10 @@ function CarouselNew() {
             alt="Third slide"
           />
           <Carousel.Caption>
-            <span>
-              <p className="product-title  fw-bold  text-success">
-                Sunburst wall clock
-              </p>
+          <span>
+            <p className="product-title  fw-bold  text-success">
+              Sunburst wall clock
+            </p>
             </span>
           </Carousel.Caption>
         </Carousel.Item>
