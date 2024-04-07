@@ -69,6 +69,10 @@ const prices = [
     name: "$3201 to $4000",
     value: "3201-4000",
   },
+  {
+    name: "$3201 to $4000",
+    value: "3201-4000",
+  },
 ];
 
 export const ratings = [
@@ -274,7 +278,7 @@ const SearchResult = () => {
 
               <Row>
                 {products.map((product) => (
-                  <Col sm={6}  lg={5} className="mb-3" key={product._id}>
+                  <Col sm={6}  lg={3} className="mb-3" key={product._id}>
                     <Product product={product}></Product>
                   </Col>
                 ))}

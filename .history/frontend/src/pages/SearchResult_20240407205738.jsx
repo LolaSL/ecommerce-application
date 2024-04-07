@@ -70,12 +70,8 @@ const prices = [
     value: "3201-4000",
   },
   {
-    name: "$4001 to $40000",
-    value: "4001-40000",
-  },
-  {
-    name: "$40001 to $100000",
-    value: "40001-100000",
+    name: "$40001 to $40000",
+    value: "4",
   },
 ];
 
@@ -282,7 +278,7 @@ const SearchResult = () => {
 
               <Row>
                 {products.map((product) => (
-                  <Col sm={6} lg={3} className="mb-3" key={product._id}>
+                  <Col sm={6}  lg={3} className="mb-3" key={product._id}>
                     <Product product={product}></Product>
                   </Col>
                 ))}

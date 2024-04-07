@@ -69,6 +69,10 @@ const prices = [
     name: "$3201 to $4000",
     value: "3201-4000",
   },
+  {
+    name: "$4001 to $40000",
+    value: "4001-",
+  },
 ];
 
 export const ratings = [
