@@ -29,7 +29,7 @@ const AboutArtsShop = () => {
           </article>
           <article className="mb-2">
             <h2 className="justify-content-center pt-4">Arts Shop Goals</h2>
-            <ul style={{ textAalign: "justify" }}>
+            <ol style={{ textAalign: "justify" }}>
               <li>
                 To study, preserve, represent and popularise the World Arts.
               </li>
@@ -41,9 +41,9 @@ const AboutArtsShop = () => {
                 To make people's lives better by opening wide access to
                 masterpieces of World Arts.
               </li>
-            </ul>
+            </ol>
           </article>
-          <article className="mb-4">
+          <article className="mb-2">
             <h2>Arts Shop Values</h2>
             <ol>
               <li>Inspiration.</li>

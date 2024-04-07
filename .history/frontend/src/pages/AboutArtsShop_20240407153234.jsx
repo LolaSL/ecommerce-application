@@ -43,7 +43,7 @@ const AboutArtsShop = () => {
               </li>
             </ul>
           </article>
-          <article className="mb-4">
+          <article className="mb-2">
             <h2>Arts Shop Values</h2>
             <ol>
               <li>Inspiration.</li>
