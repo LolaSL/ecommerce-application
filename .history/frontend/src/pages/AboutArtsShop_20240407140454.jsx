@@ -19,8 +19,8 @@ const AboutArtsShop = () => {
               />
             </div>
             <p
-              className="arts_shop_about_paragraph pt-4"
-              style={{ textAalign: "justify", fontWeight: "bold" }}
+              className="arts_shop_about_paragraph bold pt-4"
+              style={{ textAalign: "justify" }}
             >
               The Arts Shop is the arts gallery and shop. It is a hospitable
               place that is known for its rich collection and variety of
@@ -29,7 +29,7 @@ const AboutArtsShop = () => {
           </article>
           <article>
             <h2 className="justify-content-center pt-4">Arts Shop Goals</h2>
-            <ol style={{ textAalign: "justify" }}>
+            <ul style={{ textAalign: "justify" }}>
               <li>
                 To study, preserve, represent and popularise the World Arts.
               </li>
@@ -41,7 +41,7 @@ const AboutArtsShop = () => {
                 To make people's lives better by opening wide access to
                 masterpieces of World Arts.
               </li>
-            </ol>
+            </ul>
           </article>
           <article>
             <h2>Arts Shop Values</h2>
