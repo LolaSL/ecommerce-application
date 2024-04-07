@@ -29,7 +29,7 @@ function CarouselNew() {
           <Carousel.Caption>
             <span>
             <p className="product-title  fw-bold text-success">
-            Gold Plated Silver Isis Statue
+            Silver Isis Statue
             </p>
             </span>
           </Carousel.Caption>
