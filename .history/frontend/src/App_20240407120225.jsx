@@ -38,7 +38,6 @@ import Events from "./pages/Events.jsx";
 import EventEdit from "./pages/EventEdit";
 import EventList from "./pages/EventList";
 import NotFound from "./pages/NotFound.jsx";
-import AboutArtsShop from "./pages/AboutArtsShop.jsx";
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -87,6 +86,7 @@ function App() {
               >
                 Arts Shop
               </Link>
+              
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <SearchBar />
@@ -182,9 +182,6 @@ function App() {
             <Link to="/events" className="m-3 text-white a-link">
               Events
             </Link>
-            <Link to="/about_art_shop" className="m-3 text-white a-link">
-              About Art Shop
-            </Link>
           </Nav>
         </div>
 
@@ -233,7 +230,6 @@ function App() {
               <Route path="/payment" element={<PaymentOption />} />
               <Route path="/shop" element={<Home />} />
               <Route path="/events" element={<Events />} />
-              <Route path="/about_arts_shop" element={<AboutArtsShop />} />
               <Route path="*" element={<NotFound />} />
               <Route
                 path="/admin/dashboard"

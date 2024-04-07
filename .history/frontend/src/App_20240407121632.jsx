@@ -233,7 +233,7 @@ function App() {
               <Route path="/payment" element={<PaymentOption />} />
               <Route path="/shop" element={<Home />} />
               <Route path="/events" element={<Events />} />
-              <Route path="/about_arts_shop" element={<AboutArtsShop />} />
+              <Route path="/about_art_shop" element={<AboutArtShop />} />
               <Route path="*" element={<NotFound />} />
               <Route
                 path="/admin/dashboard"

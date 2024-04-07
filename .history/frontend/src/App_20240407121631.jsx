@@ -38,7 +38,7 @@ import Events from "./pages/Events.jsx";
 import EventEdit from "./pages/EventEdit";
 import EventList from "./pages/EventList";
 import NotFound from "./pages/NotFound.jsx";
-import AboutArtsShop from "./pages/AboutArtsShop.jsx";
+import AboutArtsShop from "./pages/AboutArtShop.jsx";
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -233,7 +233,7 @@ function App() {
               <Route path="/payment" element={<PaymentOption />} />
               <Route path="/shop" element={<Home />} />
               <Route path="/events" element={<Events />} />
-              <Route path="/about_arts_shop" element={<AboutArtsShop />} />
+              <Route path="/about_art_shop" element={<AboutArtShop />} />
               <Route path="*" element={<NotFound />} />
               <Route
                 path="/admin/dashboard"
