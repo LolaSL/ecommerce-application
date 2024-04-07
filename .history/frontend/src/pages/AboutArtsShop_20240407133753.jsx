@@ -46,9 +46,9 @@ const AboutArtsShop = () => {
               <li>Inspiration.</li>
               <li>Pride.</li>
               <p>
-                We celebrate local artists and acknowledge that we have to
-                uphold the Arts Shop's heritage, which includes maintaining the
-                collection of arts.
+                We celebrate local artists and acknowledge that
+                we have to uphold the Arts Shop's heritage, which includes
+                maintaining the collection of arts.
               </p>
               <li>Orientation on visitors.</li>
               <p>

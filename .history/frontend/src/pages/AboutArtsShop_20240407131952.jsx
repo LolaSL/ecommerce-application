@@ -45,34 +45,11 @@ const AboutArtsShop = () => {
             <ol>
               <li>Inspiration.</li>
               <li>Pride.</li>
-              <p>
-                We celebrate local artists and acknowledge that we have to
-                uphold the Arts Shop's heritage, which includes maintaining the
-                collection of arts.
-              </p>
               <li>Orientation on visitors.</li>
-              <p>
-                In orchestrating our operations, we prioritize our audience’s
-                preferences.
-              </p>
+              <p>By planning and carrying out our activity, we focus on the needs of our audience</p>
               <li>Creativity.</li>
-              <p>
-                We are innovating our collaboration methods with the Arts Shop
-                collection and various locations. Our projects engage not just
-                experts but also attract a diverse group of participants.
-              </p>
               <li>Openness for cooperation.</li>
-              <p>
-                We are proactive in pursuing collaborative ventures with various
-                entities and gifted individuals across community, national, and
-                global stages, ensuring our initiatives, releases, and
-                gatherings are varied, high-quality, and pertinent.
-              </p>
               <li>Hospitality.</li>
-              <p>
-                We consistently adhere to the principles of openness and
-                accessibility.
-              </p>
               <li>Professionalism.</li>
             </ol>
           </article>
