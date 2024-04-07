@@ -182,7 +182,7 @@ function App() {
             <Link to="/events" className="m-3 text-white a-link">
               Events
             </Link>
-            <Link to="/about_arts_shop" className="m-3 text-white a-link">
+            <Link to="/about_art_shop" className="m-3 text-white a-link">
               About Arts Shop
             </Link>
           </Nav>
