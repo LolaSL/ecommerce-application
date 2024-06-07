@@ -42,7 +42,8 @@ import AboutArtsShop from "./pages/AboutArtsShop.jsx";
 import Education from "./components/Education.jsx";
 import TermsOfService from "./pages/TermsOfService.jsx";
 import PrivatePlolicy from "./pages/PrivatePlolicy.jsx";
-import Returns from "./pages/Returns.jsx";
+
+
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -196,10 +197,7 @@ function App() {
               Terms of Service
             </Link>
             <Link to="/private_policy" className="m-3 text-white a-link">
-              Private Plolicy
-            </Link>
-            <Link to="/returns" className="m-3 text-white a-link">
-              Returns
+             Private Plolicy
             </Link>
           </Nav>
         </div>
@@ -252,8 +250,7 @@ function App() {
               <Route path="/education" element={<Education />} />
               <Route path="/about_arts_shop" element={<AboutArtsShop />} />
               <Route path="/terms_of_service" element={<TermsOfService />} />
-              <Route path="/private_policy" element={<PrivatePlolicy />} />
-              <Route path="/returns" element={<Returns />} />
+              <Route path="/private" element={<TermsOfService />} />
               <Route path="*" element={<NotFound />} />
               <Route
                 path="/admin/dashboard"

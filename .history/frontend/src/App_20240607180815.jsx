@@ -198,8 +198,8 @@ function App() {
             <Link to="/private_policy" className="m-3 text-white a-link">
               Private Plolicy
             </Link>
-            <Link to="/returns" className="m-3 text-white a-link">
-              Returns
+            <Link to="/private_policy" className="m-3 text-white a-link">
+              Private Plolicy
             </Link>
           </Nav>
         </div>
@@ -253,7 +253,6 @@ function App() {
               <Route path="/about_arts_shop" element={<AboutArtsShop />} />
               <Route path="/terms_of_service" element={<TermsOfService />} />
               <Route path="/private_policy" element={<PrivatePlolicy />} />
-              <Route path="/returns" element={<Returns />} />
               <Route path="*" element={<NotFound />} />
               <Route
                 path="/admin/dashboard"

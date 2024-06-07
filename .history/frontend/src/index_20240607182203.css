@@ -14,7 +14,7 @@ body {
 }
 .site-container {
   min-height: 100vh;
-}
+  }
 header {
   background-color: #000000;
   padding: 0.5rem;
@@ -209,7 +209,7 @@ ul {
   font-size: 2em;
   margin: 0.67em 0;
   font-weight: bold;
-  text-align: center;
+  text-align:center;
 }
 .education-container h2 {
   font-size: 1.47em;
@@ -221,6 +221,7 @@ ul {
   line-height: 1.5;
   text-align: justify;
 }
+
 
 .grid-container {
   display: grid;
@@ -253,6 +254,7 @@ ul {
 
   .education-container p {
     font-size: 1em;
+
   }
 
   .grid-container {
@@ -318,26 +320,24 @@ ul {
   padding: 15px;
 }
 
-.about {
-  text-align: justify;
+.about{
+  text-align:justify;
   color: white;
   text-shadow: 1px 1px 1px teal;
   padding: 15px;
 }
-.about h2 {
-  font-size: 1.6em;
+.about h2{
+  font-size:1.6em;
 }
 
-.arts_shop_about_paragraph {
-  font-size: 1.1em;
+.arts_shop_about_paragraph{
+  font-size:1.1em;
 }
 
-.terms-of-service,
-.private_policy {
+.terms-of-service, .private_policy{
   text-align: justify;
 }
 
-.link_to_returns,
-.link_to_private_policy {
-  text-decoration: none;
+.link_to_returns{
+  text-docara
 }

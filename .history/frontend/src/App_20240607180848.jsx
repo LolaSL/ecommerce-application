@@ -253,7 +253,7 @@ function App() {
               <Route path="/about_arts_shop" element={<AboutArtsShop />} />
               <Route path="/terms_of_service" element={<TermsOfService />} />
               <Route path="/private_policy" element={<PrivatePlolicy />} />
-              <Route path="/returns" element={<Returns />} />
+              <Route path="/returns" element={<PrivatePlolicy />} />
               <Route path="*" element={<NotFound />} />
               <Route
                 path="/admin/dashboard"
