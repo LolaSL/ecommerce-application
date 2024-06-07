@@ -75,11 +75,9 @@ main {
 }
 .link_product {
   text-decoration: none;
+  /* color: grey; */
 }
-.link_product:hover {
-  text-decoration: none;
-  color: teal;
-}
+
 .desc {
   text-align: justify;
 }

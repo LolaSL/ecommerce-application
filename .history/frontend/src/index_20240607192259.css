@@ -73,13 +73,6 @@ main {
 .card-title {
   text-decoration: none;
 }
-.link_product {
-  text-decoration: none;
-}
-.link_product:hover {
-  text-decoration: none;
-  color: teal;
-}
 .desc {
   text-align: justify;
 }
@@ -345,6 +338,7 @@ ul {
 }
 
 .link_to_returns,
-.link_to_private_policy {
+.link_to_private_policy,
+.link_product {
   text-decoration: none;
 }
