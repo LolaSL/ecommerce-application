@@ -72,12 +72,7 @@ function App() {
       >
         <ToastContainer position="bottom-center" limit={1} />
         <header>
-          <Navbar
-            className="navbar nav"
-            bg="secondary"
-            variant="secondary"
-            expand="lg"
-          >
+          <Navbar className="navbar nav" bg="secondary" variant="secondary" expand="lg">
             <Container className="container">
               <Button
                 className="me-4"
@@ -94,7 +89,7 @@ function App() {
                 to="/shop"
                 rel="noopener noreferrer"
               >
-                <Navbar.Brand className="text-white">Arts Shop</Navbar.Brand>
+               <Navbar.Brand className="text-white"></Navbar.Brand>  Arts Shop
               </Link>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">

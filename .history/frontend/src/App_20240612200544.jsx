@@ -72,29 +72,24 @@ function App() {
       >
         <ToastContainer position="bottom-center" limit={1} />
         <header>
-          <Navbar
-            className="navbar nav"
-            bg="secondary"
-            variant="secondary"
-            expand="lg"
-          >
+          <Navbar className="navbar nav" bg="secondary" variant="se" expand="lg">
             <Container className="container">
               <Button
                 className="me-4"
-                variant="secondary"
+                variant="dark"
                 onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
               >
                 <i className="fas fa-bars"></i>
               </Button>
               <Link className="a-link me-2" to="/" rel="noopener noreferrer">
-                <Navbar.Brand className="text-white">New Arrivals</Navbar.Brand>
+                <Navbar.Brand>New Arrivals</Navbar.Brand>
               </Link>
               <Link
                 className="a-link text-white"
                 to="/shop"
                 rel="noopener noreferrer"
               >
-                <Navbar.Brand className="text-white">Arts Shop</Navbar.Brand>
+                Arts Shop
               </Link>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">

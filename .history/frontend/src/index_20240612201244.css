@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
 }
 header {
-  background-color: #6c767a;
+  background-color: #6f787b;
   padding: 0.5rem;
 }
 
@@ -132,7 +132,7 @@ ul {
   max-height: 100%;
   position: absolute;
   left: -300px;
-  background-color: #6c767a;
+  background-color: #100901;
   transition: 0.4s;
 }
 
